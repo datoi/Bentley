@@ -106,7 +106,14 @@ button{
 .carousel-control-next, .carousel-control-prev {
     position: relative;
 }
-
+.carousel-item {
+    transition: transform 0s ease-in-out;
+  }
+  
+  .carousel-fade .active.carousel-item-start,
+  .carousel-fade .active.carousel-item-end {
+    transition: opacity 0s 0s;
+  }
 .carousel-indicators {
     margin-left: 2%;
     justify-content: start;
